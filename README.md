@@ -6,7 +6,7 @@
 # Bonusová úloha VRS (4b za 30min)
 S použitím GitHub nástrojov vytvoríte rovnaký program ako v zadaní 1. Zadanie pozostáva zo 4 častí, za každú môžete dostať 1 bod pre tím, ktoré si môžete ľubovoľne prerozdeliť vrámci tímu.
 
-1. Vytvoríte si vlastný hlavný repozitár (nie Fork) z `https://github.com/stecf/bonus_10`
+1. Vytvoríte si vlastný hlavný repozitár (nie Fork) z `https://github.com/stecf/bonus_13`
 2. Do `README.md` na začiatok dopíšete mená riešiteľov
 3. Pre každý zo štyroch problémov vytvoríte:
 	1. Issue, kde bude názov problému, napr. `Missing macros to the MCU's registers` a krátky popis problémun, napr. `Need macros to the MCU's registers so they can be used in main.c and make LED blink application code readable and great again!`
@@ -27,10 +27,10 @@ Vytvorte si najprv vlastný repozitár na GitHube, do ktorého budete chciet spr
 
 ```bash
 # Naklonovanie zdrojoveho repozitára
-git clone https://github.com/stecf/bonus_10
+git clone https://github.com/stecf/bonus_13
 
 # Vymazanie predchádzajúceho git a vytvorenie nového
-cd bonus_10
+cd bonus_13
 rm -rf .git
 git init
 
