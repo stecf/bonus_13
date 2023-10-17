@@ -6,7 +6,7 @@
 # Bonusová úloha VRS (4b za 30min)
 S použitím GitHub nástrojov vytvoríte rovnaký program ako v zadaní 1. Zadanie pozostáva zo 4 častí, za každú môžete dostať 1 bod pre tím, ktoré si môžete ľubovoľne prerozdeliť vrámci tímu.
 
-1. Vytvoríte si vlastnú Fork repozitára `https://github.com/stecf/bonus_8`
+1. Vytvoríte si vlastný hlavný repozitár (nie Fork) z `https://github.com/stecf/bonus_10`
 2. Do `README.md` na začiatok dopíšete mená riešiteľov
 3. Pre každý zo štyroch problémov vytvoríte:
 	1. Issue, kde bude názov problému, napr. `Missing macros to the MCU's registers` a krátky popis problémun, napr. `Need macros to the MCU's registers so they can be used in main.c and make LED blink application code readable and great again!`
@@ -21,3 +21,25 @@ S použitím GitHub nástrojov vytvoríte rovnaký program ako v zadaní 1. Zada
 2. Chýba konfigurácia GPIOA-3 (tlačidlo) a GPIOA-4 (LED)
 3. LED má blikať rýchlo pri stlačenom tlačidle, inak pomaly
 4. Chýba [licenčný súbor BSD-3](https://opensource.org/license/bsd-3-clause/) a nastavenie .gitignore na ignorovanie `build` a `.settings` priečinkov.
+
+# Vytvorenie vlastného repozitára z iného
+Vytvorte si najprv vlastný repozitár na GitHube, do ktorého budete chciet spraviť kópiu tohto repozitára.
+
+```bash
+# Naklonovanie zdrojoveho repozitára
+git clone https://github.com/stecf/bonus_10
+
+# Vymazanie predchádzajúceho git a vytvorenie nového
+cd bonus_10
+rm -rf .git
+git init
+
+# Vytvorenie prvého commit-u
+git add .
+git commit -m "Initial commit"
+
+# Premenovanie hlavnej vetvy a nahratie na remote repository
+git branch -M main
+git remote add origin <path to remote repository>
+git push -u origin main
+```
